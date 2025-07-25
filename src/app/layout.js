@@ -19,8 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body className="font-sans antialiased">
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex flex-col min-h-screen text-center">
+          {children}
+        </div>
       </body>
     </html>
   );
